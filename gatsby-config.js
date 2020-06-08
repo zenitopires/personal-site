@@ -7,7 +7,8 @@
 module.exports = {
   siteMetadata: {
     title: `Zenito Pires`,
-    role: `Software Developer`
+    role: `Software Developer`,
+    location: `Boston, MA`
   },
   plugins: [
     {

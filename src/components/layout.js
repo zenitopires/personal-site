@@ -1,5 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
+import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram} from "@fortawesome/free-brands-svg-icons";
 
@@ -19,6 +20,9 @@ export default function Layout({ children }) {
 
     let layout =
         <div style={{ margin: `3rem auto`, maxWidth: 900, padding: `0 1rem`}}>
+            <Helmet>
+                <title>{data.site.siteMetadata.title}</title>
+            </Helmet>
             <header style={{ marginBotoom: `1.5rem` }}>
                 <h1 style={{ display: `inline` }}>
                     {data.site.siteMetadata.title}
