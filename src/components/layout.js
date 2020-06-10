@@ -12,6 +12,7 @@ export default function Layout({ children }) {
                     siteMetadata {
                         title
                         role
+                        location
                     }
                 }
             }
@@ -29,7 +30,11 @@ export default function Layout({ children }) {
                 </h1>
                 <p style={{diplay: `inline`, marginTop: `-0.2rem`}}>
                     {data.site.siteMetadata.role}
-                    <br/>
+                </p>
+                <p style={{ marginTop: `-1.7rem`}}>
+                    {data.site.siteMetadata.location}
+                </p>
+                <p style={{marginTop: `-1.5rem`}}>
                     <a href="https://github.com/zenitopires">
                     <FontAwesomeIcon 
                         style={{ marginTop: `0.2rem`, marginRight: `0.8rem` }}
